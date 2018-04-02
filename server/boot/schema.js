@@ -20,8 +20,8 @@ module.exports = app => {
       user.create([
         {
           username: 'username',
-          email: 'test6@test.com',
           password: 'password',
+          email: 'test6@test.com',
           emailVerified: true
         }
       ]);
