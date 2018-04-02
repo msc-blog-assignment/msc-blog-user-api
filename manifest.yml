@@ -1,0 +1,8 @@
+name: msc-blog-user-api
+instances: 1
+memory: 128M
+buildpack: nodejs_buildpack
+command: node ./server/server.js
+env:
+    OPTIMIZE_MEMORY : true
+    NODE_ENV: production
