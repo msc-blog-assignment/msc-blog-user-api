@@ -38,5 +38,9 @@
   "user": {
     "dataSource": "db",
     "public": true
+  },
+  "me": {
+    "dataSource": null,
+    "public": true
   }
 }
