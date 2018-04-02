@@ -1,6 +1,6 @@
 name: msc-blog-user-api
 instances: 1
-memory: 100M
+memory: 128M
 buildpack: nodejs_buildpack
 command: node ./server/server.js
 env:
