@@ -5,7 +5,7 @@ services:
 - docker
 install:
 - npm i
-- npm lint
+- npm run lint
 deploy:
   - provider: cloudfoundry
     api: https://api.run.pivotal.io
