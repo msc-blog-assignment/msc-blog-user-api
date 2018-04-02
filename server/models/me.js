@@ -5,15 +5,12 @@ module.exports = Me => {
     let AccessToken = Me.app.models.AccessToken;
     AccessToken.findForRequest(req, {}, (aux, accesstoken) => {
       let UserModel = Me.app.models.User;
-      let UserIdentityModel = Me.app.models.UserIdentity;
       UserModel.findById(accesstoken.userId, (error, user) => {
         if (error) {
           return next(error);
         }
 
-        UserIdentityModel.findOne({where: {userId: accesstoken.userId}}, (error, identity) => {
-          next(error, {user, identity});
-        });
+        next(error, {user});
       });
     });
   };
