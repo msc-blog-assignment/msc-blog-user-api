@@ -6,3 +6,4 @@ command: node ./server/server.js
 env:
     OPTIMIZE_MEMORY : true
     NODE_ENV: production
+    SERVICE_DISCOVERY_HOST: msc-blog-consul.cfapps.io
